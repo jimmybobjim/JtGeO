@@ -14,10 +14,15 @@ public class ItemWithTooltip extends Item {
 	private final Component tooltip;
 	private final boolean displayBelowName;
 
-	public ItemWithTooltip(Properties pProperties, String pTooltip, boolean pDisplayBelowName) {
-		super(pProperties);
-		this.tooltip = Component.literal(pTooltip).withStyle(ChatFormatting.GRAY);
-		this.displayBelowName = pDisplayBelowName;
+	/**
+	 * @param tooltip The tooltip to display
+	 * @param displayBelowName Whether to display the tooltip above the list of creative tabs containing this item in the creative menu
+	 * @see net.junedev.junetech_geo.mixin.CreativeModeInventoryScreenMixin
+	 */
+	public ItemWithTooltip(Properties properties, String tooltip, boolean displayBelowName) {
+		super(properties);
+		this.tooltip = Component.literal(tooltip).withStyle(ChatFormatting.GRAY);
+		this.displayBelowName = displayBelowName;
 	}
 
 	@Override
