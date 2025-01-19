@@ -22,14 +22,16 @@ import java.util.List;
 public class CreativeModeInventoryScreenMixin {
     @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At(value = "RETURN", ordinal = 1))
     public void addTooltip(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
+        List<Component> returnValue = cir.getReturnValue();
+
         if (pStack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BlockWithTooltip blockWithTooltip && blockWithTooltip.displaysBelowName()) {
             Component component = blockWithTooltip.getTooltip();
-            cir.getReturnValue().removeIf(c -> c.equals(component));
-            cir.getReturnValue().add(1, component);
+            returnValue.removeIf(c -> c.equals(component));
+            returnValue.add(1, component);
         } else if (pStack.getItem() instanceof ItemWithTooltip itemWithTooltip && itemWithTooltip.displaysBelowName()) {
             Component component = itemWithTooltip.getTooltip();
-            cir.getReturnValue().removeIf(c -> c.equals(component));
-            cir.getReturnValue().add(1, component);
+            returnValue.removeIf(c -> c.equals(component));
+            returnValue.add(1, component);
         }
     }
 }
