@@ -1,8 +1,0 @@
-  // "client.LevelLoadingScreenMixin" - goes in client mixins.
-    "client.CreateWorldScreen$WorldTabMixin",
-
-    build mixins
-     "ChunkGeneratorMixin",
-     "ChunkStatusMixin",
-     "ResetChunksCommandMixin",
-     "WorldOptionsMixin"

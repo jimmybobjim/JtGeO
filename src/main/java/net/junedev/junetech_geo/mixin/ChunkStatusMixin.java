@@ -1,4 +1,4 @@
-/*package net.junedev.junetech_geo.mixin;
+package net.junedev.junetech_geo.mixin;
 
 import net.junedev.junetech_geo.worldgen.chunk.JtGeOChunkStatus;
 import net.minecraft.world.level.chunk.ChunkStatus;
@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 /**
  * Replace the parent {@link ChunkStatus} of {@link ChunkStatus#SURFACE} with {@link JtGeOChunkStatus#STONE_REPLACER}
+ */
 
 @Mixin(ChunkStatus.class)
 public class ChunkStatusMixin {
@@ -19,4 +20,3 @@ public class ChunkStatusMixin {
         return JtGeOChunkStatus.STONE_REPLACER;
     }
 }
-*/

@@ -1,4 +1,4 @@
-/*package net.junedev.junetech_geo.client.screen;
+package net.junedev.junetech_geo.client.screen;
 
 import net.junedev.junetech_geo.worldgen.settings.StrataOptions;
 import net.junedev.junetech_geo.worldgen.settings.WorldStrataOptions;
@@ -84,4 +84,3 @@ public class JtGeOWorldPresetScreen extends Screen {
         super.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
     }
 }
-*/

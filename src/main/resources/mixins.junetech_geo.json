@@ -5,9 +5,15 @@
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "mixins": [
+    "ChunkGeneratorMixin",
+    "ChunkStatusMixin",
+    "ResetChunksCommandMixin",
+    "WorldOptionsMixin"
   ],
   "client": [
-    "client.CreativeModeInventoryScreenMixin"
+    "client.CreateWorldScreen$WorldTabMixin",
+    "client.CreativeModeInventoryScreenMixin",
+    "client.LevelLoadingScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,4 +1,4 @@
-/*package net.junedev.junetech_geo.mixin;
+package net.junedev.junetech_geo.mixin;
 
 import net.junedev.junetech_geo.worldgen.settings.StrataOptions;
 import net.junedev.junetech_geo.worldgen.settings.WorldStrataOptions;
@@ -23,4 +23,3 @@ public class WorldOptionsMixin implements WorldStrataOptions {
         this.strataOptions = strataOptions.apply(this.strataOptions);
     }
 }
-*/

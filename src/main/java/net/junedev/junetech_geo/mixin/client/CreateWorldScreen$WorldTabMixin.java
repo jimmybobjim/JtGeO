@@ -1,4 +1,4 @@
-/*package net.junedev.junetech_geo.mixin.client;
+package net.junedev.junetech_geo.mixin.client;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
@@ -51,4 +51,4 @@ public abstract class CreateWorldScreen$WorldTabMixin {
 
         return call;
     }
-}*/
+}

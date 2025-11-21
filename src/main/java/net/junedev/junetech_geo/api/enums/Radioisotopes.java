@@ -5,30 +5,30 @@ public class Radioisotopes {
     } //half-life is in years
 
     private static void loadRadioisotopes() {
-        Radioisotopes.Tritium = loadTritium;
-        Radioisotopes.Carbon14 = loadCarbon14;
-        Radioisotopes.Technetium99 = loadTechnetium99;
-        Radioisotopes.Promethium147 = loadPromethium147;
-        Radioisotopes.Samarium146 = loadSamarium146;
-        Radioisotopes.Mercury206 = loadMercury206;
-        Radioisotopes.Thallium206 = loadThallium206;
-        Radioisotopes.Thallium210 = loadThallium210;
-        Radioisotopes.Lead210 = loadLead210;
-        Radioisotopes.Lead214 = loadLead214;
-        Radioisotopes.Bismuth209 = loadBismuth209;
-        Radioisotopes.Bismuth214 = loadBismuth214;
-        Radioisotopes.Polonium218 = loadPolonium218;
-        Radioisotopes.Radon222 = loadRadon222;
-        Radioisotopes.Radium226 = loadRadium226;
-        Radioisotopes.Radium228 = loadRadium228;
-        Radioisotopes.Thorium231 = loadThorium231;
-        Radioisotopes.Thorium232 = loadThorium232;
-        Radioisotopes.Thorium234 = loadThorium234;
-        Radioisotopes.Protactinium234 = loadProtactinium234;
-        Radioisotopes.Uranium233 = loadUranium233;
-        Radioisotopes.Uranium234 = loadUranium234;
-        Radioisotopes.Uranium235 = loadUranium235;
-        Radioisotopes.Uranium238 = loadUranium238;
+//        Radioisotopes.Tritium = loadTritium;
+//        Radioisotopes.Carbon14 = loadCarbon14;
+//        Radioisotopes.Technetium99 = loadTechnetium99;
+//        Radioisotopes.Promethium147 = loadPromethium147;
+//        Radioisotopes.Samarium146 = loadSamarium146;
+//        Radioisotopes.Mercury206 = loadMercury206;
+//        Radioisotopes.Thallium206 = loadThallium206;
+//        Radioisotopes.Thallium210 = loadThallium210;
+//        Radioisotopes.Lead210 = loadLead210;
+//        Radioisotopes.Lead214 = loadLead214;
+//        Radioisotopes.Bismuth209 = loadBismuth209;
+//        Radioisotopes.Bismuth214 = loadBismuth214;
+//        Radioisotopes.Polonium218 = loadPolonium218;
+//        Radioisotopes.Radon222 = loadRadon222;
+//        Radioisotopes.Radium226 = loadRadium226;
+//        Radioisotopes.Radium228 = loadRadium228;
+//        Radioisotopes.Thorium231 = loadThorium231;
+//        Radioisotopes.Thorium232 = loadThorium232;
+//        Radioisotopes.Thorium234 = loadThorium234;
+//        Radioisotopes.Protactinium234 = loadProtactinium234;
+//        Radioisotopes.Uranium233 = loadUranium233;
+//        Radioisotopes.Uranium234 = loadUranium234;
+//        Radioisotopes.Uranium235 = loadUranium235;
+//        Radioisotopes.Uranium238 = loadUranium238;
     }
     private static Radioisotopes loadTritium(){
         return new Radioisotopes(
